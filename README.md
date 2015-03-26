@@ -86,7 +86,7 @@ slc run
 }
 ```
 **common/models/geocode.js**  (custom business logic to hide the out-of-the-box *invoke* method on the model)
-```json
+```javascript
 module.exports = function(Geocode) {
     var isStatic = true;
     Geocode.disableRemoteMethod('invoke', isStatic);
